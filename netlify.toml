@@ -1,0 +1,6 @@
+[build]
+  command = "composer install && php artisan config:cache"
+  publish = "public"
+
+[context.production.environment]
+  PHP_VERSION = "8.2"
